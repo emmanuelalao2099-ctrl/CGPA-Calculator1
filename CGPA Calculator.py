@@ -3,9 +3,9 @@ import pandas as pd
 
 # Page configuration
 st.set_page_config(
-    page_title = "Student CGPA Calculator",
-    page_icon = "🎓",   # windows + . to access the emoji collection page on your pc
-    layout = "centered"
+    page_title="Student CGPA Calculator",
+    page_icon="🎓",
+    layout="centered"
 )
 
 # Grading system
@@ -28,13 +28,13 @@ st.info("This calculator uses a 5.00 grading scale.")
 # Course input
 st.subheader("Enter Course Details")
 
-number_of_courses = st.number_input(
+num_courses = int(st.number_input(
     "Number of courses",
-    min_value = 1,
-    max_value = 300,
-    value = 5,
-    step = 1
-)
+    min_value=1,
+    max_value=30,
+    value=5,
+    step=1
+))
 
 courses = []
 
