@@ -31,7 +31,7 @@ st.subheader("Enter Course Details")
 num_courses = int(st.number_input(
     "Number of courses",
     min_value=1,
-    max_value=30,
+    max_value=300,
     value=5,
     step=1
 ))
