@@ -15,7 +15,7 @@ grade_points = {
     "C": 3,  # 50 - 59
     "D": 2,  # 45 - 49
     "E": 1,  # 40 - 44
-    "F": 0,  # <40
+    "F": 0,  # < 40
 }
 
 # Application title
@@ -23,7 +23,8 @@ st.title("🎓 Student CGPA Calculator")
 
 st.write("Calculate your CGPA using your course credit units and grades.")
 
-st.info("This calculator uses a 5.00 grading scale.")
+st.info("This calculator uses a 5.00 grading scale."
+"Enter all your courses from 100 level to current level, irrespective of semester.")
 
 # Course input
 st.subheader("Enter Course Details")
@@ -31,7 +32,7 @@ st.subheader("Enter Course Details")
 num_courses = int(st.number_input(
     "Number of courses",
     min_value=1,
-    max_value=300,
+    max_value=150,
     value=5,
     step=1
 ))
