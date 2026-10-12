@@ -23,8 +23,7 @@ st.title("🎓 Student CGPA Calculator")
 
 st.write("Calculate your CGPA using your course credit units and grades.")
 
-st.info("This calculator uses a 5.00 grading scale."
-"Enter all your courses from 100 level to current level, irrespective of semester.")
+st.info("This calculator uses a 5.00 grading scale. Enter all your courses from 100 level to current level, irrespective of semester.")
 
 # Course input
 st.subheader("Enter Course Details")
